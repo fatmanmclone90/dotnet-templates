@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Specflow.EndtoEndTests", "Specflow.EndtoEndTests\Specflow.EndtoEndTests.csproj", "{4EAEE8AA-0450-489D-9667-337DEEA65450}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B07EE832-3B8E-4B00-B06D-F830BE747F6C}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		.template.config\dotnetcli.host.json = .template.config\dotnetcli.host.json
+		README.md = README.md
+		.template.config\template.json = .template.config\template.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Dev|Any CPU = Dev|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4EAEE8AA-0450-489D-9667-337DEEA65450}.Dev|Any CPU.ActiveCfg = Dev|Any CPU
+		{4EAEE8AA-0450-489D-9667-337DEEA65450}.Dev|Any CPU.Build.0 = Dev|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C765894-F2CE-4AB0-9752-6916F69EC9C4}
+	EndGlobalSection
+EndGlobal

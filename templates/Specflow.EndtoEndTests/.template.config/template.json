@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Chris Tamlyn",
+  "classifications": [ "Test", "FunctionalTest" ],
+  "identity": "Specflow.EndtoEndTests",
+  "name": "Specflow End to End Tests",
+  "shortName": "Specflow.EndtoEndTests",
+  "sourceName": "Specflow.EndtoEndTests",
+  "preferNameDirectory": true,
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "symbols": {
+    "provider": {
+      "type": "parameter",
+      "description": "The provider name.",
+      "defaultValue": "{ProviderPlaceholder}"
+    },
+    "nameLower": {
+      "type": "generated",
+      "generator": "casing",
+      "parameters": {
+        "source": "provider",
+        "toLower": true
+      },
+      "replaces": "{PROVIDER}"
+    },
+    "EnableDatabaseFeature": {
+      "type": "parameter",
+      "dataType": "bool",
+      "defaultValue": "true"
+    }
+  },
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "condition": "(!EnableDatabaseFeature)",
+          "exclude": [
+            "Specflow.EndtoEndTests/Features/Feature2.feature",
+            "Specflow.EndtoEndTests/Features/Feature2.feature.cs"
+          ]
+        }
+      ]
+    }
+  ]
+}
